@@ -59,6 +59,30 @@ public class Day4
         
         Console.WriteLine(result);
     }
+
+    public void FindMasX(char[][] input)
+    {
+        var result = 0;
+
+        for (var column = 1; column < input.Length - 1; column++)
+        {
+            for (var row = 1; row < input[column].Length - 1; row++)
+            {
+                if (input[column][row] is 'A')
+                {
+                    if ((input[column - 1][row - 1] is 'M' && input[column + 1][row + 1] is 'S'
+                        || input[column - 1][row - 1] is 'S' && input[column + 1][row + 1] is 'M')
+                        && (input[column - 1][row + 1] is 'M' && input[column + 1][row - 1] is 'S'
+                        || input[column - 1][row + 1] is 'S' && input[column + 1][row - 1] is 'M'))
+                    {
+                        result++;
+                    }
+                }
+            }
+        }
+        
+        Console.WriteLine(result);
+    }
     
     private bool FindInLine(int column, int row)
     {
