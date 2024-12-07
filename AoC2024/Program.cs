@@ -13,12 +13,19 @@ class Program
         // day3.GetSum(input);
 
         // Part 1
-        var input = File.ReadAllLines("Inputs/day4.txt");
-        var chars = input.Select(l => l.ToCharArray()).ToArray();
-        var day4 = new Day4();
-        day4.FindXmas(chars);
+        // var input = File.ReadAllLines("Inputs/day4.txt");
+        // var chars = input.Select(l => l.ToCharArray()).ToArray();
+        // var day4 = new Day4();
+        // day4.FindXmas(chars);
         
         // Part 2
-        day4.FindMasX(chars);
+        // day4.FindMasX(chars);
+        
+        // Part 1
+        var input = File.ReadAllLines("Inputs/day6.txt");
+        var chars = input.Select(l => l.ToArray()).ToArray();
+        var day6  = new Day6();
+        day6.FindGuardsMovement(chars);
+        
     }
 }
