@@ -29,7 +29,7 @@ class Program
         // var day6  = new Day6();
         // day6.FindGuardsMovement(chars);
         
-        // Day7 - Part 1
+        // Day7 - Part 1 & 2
         var input = File.ReadAllLines("Inputs/day7.txt");
         var day7 = new Day7();
         day7.SolveEquations(input);

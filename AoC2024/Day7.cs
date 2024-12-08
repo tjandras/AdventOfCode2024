@@ -40,6 +40,11 @@ public class Day7
         {
             return true;
         }
+        
+        if (CanSolve(expectedResult, numbers, currentIndex + 1, long.Parse($"{currentResult}{numbers[currentIndex + 1]}")))
+        {
+            return true;
+        }
 
         return false;
     }
