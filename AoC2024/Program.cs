@@ -30,8 +30,13 @@ class Program
         // day6.FindGuardsMovement(chars);
         
         // Day7 - Part 1 & 2
-        var input = File.ReadAllLines("Inputs/day7.txt");
-        var day7 = new Day7();
-        day7.SolveEquations(input);
+        // var input = File.ReadAllLines("Inputs/day7.txt");
+        // var day7 = new Day7();
+        // day7.SolveEquations(input);
+        
+        // Day9 - Part 1
+        var input = File.ReadAllText("Inputs/day9.txt").ToArray().Select(c => int.Parse(c.ToString())).ToArray();
+        var day9 = new Day9();
+        day9.GetChecksum(input);
     }
 }
