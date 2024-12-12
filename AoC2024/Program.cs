@@ -37,6 +37,9 @@ class Program
         // Day9 - Part 1
         var input = File.ReadAllText("Inputs/day9.txt").ToArray().Select(c => int.Parse(c.ToString())).ToArray();
         var day9 = new Day9();
-        day9.GetChecksum(input);
+        // day9.GetChecksum(input);
+        
+        // Day9 - Part 2
+        day9.GetChecksumPart2(input);
     }
 }
