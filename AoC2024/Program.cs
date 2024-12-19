@@ -35,11 +35,17 @@ class Program
         // day7.SolveEquations(input);
         
         // Day9 - Part 1
-        var input = File.ReadAllText("Inputs/day9.txt").ToArray().Select(c => int.Parse(c.ToString())).ToArray();
-        var day9 = new Day9();
+        // var input = File.ReadAllText("Inputs/day9.txt").ToArray().Select(c => int.Parse(c.ToString())).ToArray();
+        // var day9 = new Day9();
         // day9.GetChecksum(input);
         
         // Day9 - Part 2
-        day9.GetChecksumPart2(input);
+        // day9.GetChecksumPart2(input);
+        
+        // Day 14
+        var input = File.ReadAllLines("Inputs/day14.txt");
+        var day14 = new Day14();
+        // Part 1
+        day14.GetSafetyNumber(input);
     }
 }
