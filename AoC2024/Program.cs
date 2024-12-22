@@ -43,9 +43,17 @@ class Program
         // day9.GetChecksumPart2(input);
         
         // Day 14
-        var input = File.ReadAllLines("Inputs/day14.txt");
-        var day14 = new Day14();
+        // var input = File.ReadAllLines("Inputs/day14.txt");
+        // var day14 = new Day14();
         // Part 1
-        day14.GetSafetyNumber(input);
+        // day14.GetSafetyNumber(input);
+        
+        // Day 22
+        var day22 = new Day22();
+        var input = File.ReadAllLines("Inputs/day22.txt");
+        // Part 1
+        day22.GetSumOfSecretNumbers(input);
+        // Part 2
+        day22.Part2(input);
     }
 }
