@@ -49,11 +49,17 @@ class Program
         // day14.GetSafetyNumber(input);
         
         // Day 22
-        var day22 = new Day22();
-        var input = File.ReadAllLines("Inputs/day22.txt");
+        // var day22 = new Day22();
+        // var input = File.ReadAllLines("Inputs/day22.txt");
         // Part 1
-        day22.GetSumOfSecretNumbers(input);
+        // day22.GetSumOfSecretNumbers(input);
         // Part 2
-        day22.Part2(input);
+        // day22.Part2(input);
+        
+        // Day 24
+        var day24 = new Day24();
+        var input = File.ReadAllText("Inputs/day24.txt");
+        // Part 1
+        day24.GetOutput(input);
     }
 }
